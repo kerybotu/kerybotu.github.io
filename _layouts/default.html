@@ -1,130 +1,78 @@
----
-layout: default
-title: "Index - 奇怪的小马维基"
-description: "探索奇怪的小马维基的 index 页面内容"
----
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO 优化：标题更具体，包含关键词 -->
-    <title>奇怪的小马维基 - 小马爱好者的知识与博客</title>
-    <!-- SEO 元标签：描述和关键词 -->
-    <meta name="description" content="奇怪的小马维基是一个分享小马相关知识、技术文章和个人兴趣的网站，由小马爱好者创建，欢迎探索维基与博客内容！">
-    <meta name="keywords" content="奇怪的小马维基, 小马爱好者, 小马知识, 技术博客, 个人网站">
-    <meta name="author" content="小马爱好者">
-    <!-- Open Graph 协议，提升社交媒体分享效果 -->
-    <meta property="og:title" content="奇怪的小马维基 - 小马爱好者的知识与博客">
-    <meta property="og:description" content="探索小马相关知识、技术文章和兴趣分享，欢迎加入奇怪的小马维基！">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kerybotu.github.io/">
-    <meta property="og:image" content="https://kerybotu.github.io/images/favicon.ico"> <!-- 替换为你的网站图标或图片 -->
-    <!-- 规范化 URL，避免重复内容 -->
-    <link rel="canonical" href="https://kerybotu.github.io/">    
-    <!-- 添加 favicon.ico -->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> <!-- 如果文件在根目录 -->
-    <!-- 如果 favicon.ico 在子目录，例如 /images/，则使用： -->
-    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->>
-    <!-- 样式保持不变 -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #6a0dad;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-            font-size: 1.5rem;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #8249d6;
-            padding: 0.5rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-        }
-        nav a:hover {
-            background: #5a109d;
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #6a0dad;
-            color: white;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <!-- 使用语义化 header 标签 -->
-    <header>
-        <h1>奇怪的小马维基</h1> <!-- h1 标签提升标题重要性 -->
-    </header>
-    <!-- 使用语义化 nav 标签 -->
-    <nav>
-        <a href="map.html" title="探索小马维基内容">维基</a>
-        <a href="#blog" title="阅读技术与小马博客">博客</a>
-        <a href="#about" title="了解网站与作者">关于</a>
-    </nav>
-    <main class="container"> <!-- 使用 main 标签包裹主要内容 -->
-        <section class="section" id="wiki">
-            <h2>📖 维基</h2>
-            <p>欢迎来到“奇怪的小马维基”，这里收录了大量有趣的小马相关知识与内容，适合所有小马爱好者探索！</p> <!-- 优化关键词密度 -->
-            <p><a href="map.html" title="进入小马维基">进入维基</a></p>
-        </section>
-        <section class="section" id="blog">
-            <h2>✍️ 博客</h2>
-            <p>在这里，我分享关于技术、创作和小马的原创文章，涵盖编程经验与小马文化。</p> <!-- 增加关键词 -->
-            <p><a href="blog" title="查看最新博客文章">查看博客</a></p>
-        </section>
-        <section class="section" id="about">
-            <h2>🌟 关于</h2>
-            <p>这个网站由一位小马爱好者搭建，旨在分享我的兴趣爱好，包括小马知识与技术探索。</p>
-        </section>
-    </main>
-    <!-- 使用语义化 footer 标签 -->
-    <footer>
-        <p>© 2025 奇怪的小马维基 | 由小马爱好者创建</p>
-    </footer>
+import os
+import re
+import sys
 
-    <!-- 结构化数据 (Schema.org) 以 JSON-LD 格式，提升搜索引擎理解 -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "奇怪的小马维基",
-        "url": "https://kerybotu.github.io/",
-        "description": "一个分享小马知识、技术文章和兴趣爱好的个人网站",
-        "publisher": {
-            "@type": "Person",
-            "name": "小马爱好者"
-        },
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://kerybotu.github.io/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-    </script>
-</body>
-</html>
+def process_file(filename):
+    """为单个 HTML 文件添加 Front Matter 并清理多余标签"""
+    # 生成标题和描述
+    base_name = os.path.splitext(filename)[0]  # 去掉 .html 后缀
+    title = f"{base_name.capitalize()} - 奇怪的小马维基"
+    description = f"探索奇怪的小马维基的 {base_name} 页面内容，了解更多关于小马知识和技术博客的信息。"
+
+    # 读取文件内容
+    try:
+        with open(filename, 'r', encoding='utf-8') as f:
+            content = f.read()
+    except UnicodeDecodeError:
+        print(f"错误: {filename} 编码不是 UTF-8，尝试其他编码")
+        with open(filename, 'r', encoding='latin1') as f:
+            content = f.read()
+    except Exception as e:
+        print(f"错误: 无法读取 {filename} - {e}")
+        return
+
+    # 检查是否已包含 Front Matter
+    if content.strip().startswith('---'):
+        print(f"跳过: {filename} (已包含 Front Matter)")
+        return
+
+    # 清理多余的 HTML 标签，保留 <body> 内的内容
+    body_content = re.search(r'<body[^>]*>([\s\S]*?)</body>', content, re.IGNORECASE)
+    if body_content:
+        cleaned_content = body_content.group(1).strip()
+    else:
+        # 如果没有 <body> 标签，移除头部和尾部标签
+        cleaned_content = re.sub(r'<!DOCTYPE html>[\s\S]*?<html[^>]*>[\s\S]*?<head>[\s\S]*?</head>', '', content, flags=re.IGNORECASE)
+        cleaned_content = re.sub(r'</html>', '', cleaned_content, flags=re.IGNORECASE)
+        cleaned_content = cleaned_content.strip()
+
+    # 如果内容为空，添加默认提示
+    if not cleaned_content:
+        cleaned_content = f"<p>欢迎访问 {base_name} 页面，内容待更新。</p>"
+
+    # 生成 Front Matter
+    front_matter = f"""---
+layout: default
+title: "{title}"
+description: "{description}"
+---
+"""
+
+    # 写入新内容
+    new_content = front_matter + cleaned_content
+    try:
+        with open(filename, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        print(f"已处理: {filename}")
+    except Exception as e:
+        print(f"错误: 无法写入 {filename} - {e}")
+
+def main():
+    """主函数，处理目录下所有 HTML 文件"""
+    # 获取当前目录
+    current_dir = os.getcwd()
+    print(f"正在处理目录: {current_dir}")
+
+    # 遍历所有 .html 文件
+    html_files = [f for f in os.listdir(current_dir) if f.lower().endswith('.html')]
+    if not html_files:
+        print("错误: 当前目录下没有找到 .html 文件")
+        sys.exit(1)
+
+    for filename in html_files:
+        process_file(filename)
+
+    print(f"处理完成，共处理 {len(html_files)} 个文件")
+
+if __name__ == "__main__":
+    main()
