@@ -3,7 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>奇怪的小马维基</title>
+    <!-- SEO 优化：标题更具体，包含关键词 -->
+    <title>奇怪的小马维基 - 小马爱好者的知识与博客</title>
+    <!-- SEO 元标签：描述和关键词 -->
+    <meta name="description" content="奇怪的小马维基是一个分享小马相关知识、技术文章和个人兴趣的网站，由小马爱好者创建，欢迎探索维基与博客内容！">
+    <meta name="keywords" content="奇怪的小马维基, 小马爱好者, 小马知识, 技术博客, 个人网站">
+    <meta name="author" content="小马爱好者">
+    <!-- Open Graph 协议，提升社交媒体分享效果 -->
+    <meta property="og:title" content="奇怪的小马维基 - 小马爱好者的知识与博客">
+    <meta property="og:description" content="探索小马相关知识、技术文章和兴趣分享，欢迎加入奇怪的小马维基！">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://username.github.io/"> <!-- 替换为你的实际 URL -->
+    <meta property="og:image" content="https://username.github.io/images/pony-logo.png"> <!-- 替换为你的网站图标或图片 -->
+    <!-- 规范化 URL，避免重复内容 -->
+    <link rel="canonical" href="https://username.github.io/"> <!-- 替换为你的实际 URL -->
+    <!-- 样式保持不变 -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -53,30 +67,55 @@
     </style>
 </head>
 <body>
-    <header>奇怪的小马维基</header>
+    <!-- 使用语义化 header 标签 -->
+    <header>
+        <h1>奇怪的小马维基</h1> <!-- h1 标签提升标题重要性 -->
+    </header>
+    <!-- 使用语义化 nav 标签 -->
     <nav>
-        <a href="map.html">维基</a>
-        <a href="#blog">博客</a>
-        <a href="#about">关于</a>
+        <a href="map.html" title="探索小马维基内容">维基</a>
+        <a href="#blog" title="阅读技术与小马博客">博客</a>
+        <a href="#about" title="了解网站与作者">关于</a>
     </nav>
-    <div class="container">
-        <div class="section" id="wiki">
+    <main class="container"> <!-- 使用 main 标签包裹主要内容 -->
+        <section class="section" id="wiki">
             <h2>📖 维基</h2>
-            <p>这里是“奇怪的小马维基”，收录了一些有趣的小马相关内容！</p>
-            <p><a href="map.html">进入维基</a></p>
-        </div>
-        <div class="section" id="blog">
+            <p>欢迎来到“奇怪的小马维基”，这里收录了大量有趣的小马相关知识与内容，适合所有小马爱好者探索！</p> <!-- 优化关键词密度 -->
+            <p><a href="map.html" title="进入小马维基">进入维基</a></p>
+        </section>
+        <section class="section" id="blog">
             <h2>✍️ 博客</h2>
-            <p>在这里，我会写一些关于技术、创作和小马的文章。</p>
-            <p><a href="blog">查看博客</a></p>
-        </div>
-        <div class="section" id="about">
+            <p>在这里，我分享关于技术、创作和小马的原创文章，涵盖编程经验与小马文化。</p> <!-- 增加关键词 -->
+            <p><a href="blog" title="查看最新博客文章">查看博客</a></p>
+        </section>
+        <section class="section" id="about">
             <h2>🌟 关于</h2>
-            <p>这个网站是我自己搭建的，主要分享我的兴趣爱好。</p>
-        </div>
-    </div>
+            <p>这个网站由一位小马爱好者搭建，旨在分享我的兴趣爱好，包括小马知识与技术探索。</p>
+        </section>
+    </main>
+    <!-- 使用语义化 footer 标签 -->
     <footer>
-        &copy; 2025 奇怪的小马维基 | 由小马爱好者创建
+        <p>© 2025 奇怪的小马维基 | 由小马爱好者创建</p>
     </footer>
+
+    <!-- 结构化数据 (Schema.org) 以 JSON-LD 格式，提升搜索引擎理解 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "奇怪的小马维基",
+        "url": "https://username.github.io/", <!-- 替换为你的实际 URL -->
+        "description": "一个分享小马知识、技术文章和兴趣爱好的个人网站",
+        "publisher": {
+            "@type": "Person",
+            "name": "小马爱好者"
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://username.github.io/search?q={search_term_string}", <!-- 如果有搜索功能，替换为实际 URL -->
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
 </body>
 </html>
