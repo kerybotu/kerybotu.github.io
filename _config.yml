@@ -54,14 +54,16 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# 站点基本信息
 title: "奇怪的小马维基"
 description: "分享小马知识、技术文章和兴趣爱好的个人网站"
-url: "https://kerybotu.github.io"
-baseurl: "" # 如果使用子路径，调整此项
-
-# Jekyll 设置
-theme: minima
+url: "https://kerybotu.github.io"  # 更新为实际域名
+baseurl: ""  # 保持为空，除非使用子路径
+theme: minima  # 如果不需要 minima，可删除
 plugins:
-  - jekyll-sitemap  # 生成站点地图
-  - jekyll-feed    # 生成 RSS 订阅
+  - jekyll-sitemap
+  - jekyll-feed
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"  # 强制所有页面使用 default 布局
