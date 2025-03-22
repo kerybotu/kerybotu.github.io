@@ -59,9 +59,11 @@ description: "分享小马知识、技术文章和兴趣爱好的个人网站"
 url: "https://kerybotu.github.io"  # 更新为实际域名
 baseurl: ""  # 保持为空，除非使用子路径
 theme: minima  # 如果不需要 minima，可删除
+permalink: /:path/:basename
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-redirect-from
 defaults:
   - scope:
       path: ""
