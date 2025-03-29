@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} - 奇怪的小马维基</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    {% seo %}  <!-- SEO插件 -->
+    <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+    
+    <!-- SEO 标签 -->
+    <meta name="description" content="奇怪的小马维基 - 分享小马知识、技术文章和兴趣爱好的个人网站">
+    <meta name="keywords" content="小马, 彩虹小马, MLP, 技术, 博客, 维基">
+    <meta name="author" content="奇怪的小马维基">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:title" content="{{ page.title }} - 奇怪的小马维基">
+    <meta property="og:description" content="探索小马文化与技术文章">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="/favicon.ico">
+
+    <!-- 样式 -->
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -19,12 +39,10 @@
             color: #e0e0e0;
             padding: 20px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-            /* 移除 position: sticky; top: 0; z-index: 1000; */
-            /* 让 header 恢复到文档流中，不固定在顶部 */
         }
         .header-title {
             margin: 0;
-            font-size: 3.5em; /* 从2.5em增大到3.5em */
+            font-size: 3.5em;
             text-align: center;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
         }
@@ -53,77 +71,11 @@
             margin: 20px auto;
             padding: 20px;
         }
-        h1 {
-            text-align: center;
-            color: #b19cd9;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: #b19cd9;
-            font-size: 1.8em;
-            margin-top: 30px;
-            padding-left: 10px;
-            border-left: 5px solid #4b3575;
-        }
-        .section {
-            background: #3a2f5b;
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.2s;
-        }
-        .section:hover {
-            transform: translateY(-5px);
-        }
-        p {
-            margin: 10px 0;
-            font-size: 1.1em;
-        }
-        a {
-            color: #b19cd9;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.2s;
-        }
-        a:hover {
-            color: #ffffff;
-        }
         footer {
             text-align: center;
             padding: 20px;
-            font-size: 0.9em;
             color: #b0b0b0;
             background: #2c1b47;
-            margin-top: 40px;
-            border-top: 2px dashed #4b3575;
-        }
-        @media (max-width: 600px) {
-            .container {
-                padding: 10px;
-            }
-            h1 {
-                font-size: 2em;
-            }
-            h2 {
-                font-size: 1.5em;
-            }
-            .section {
-                padding: 15px;
-            }
-            .header-title {
-                font-size: 2.5em; /* 小屏幕时减小到2.5em */
-            }
-            nav {
-                flex-direction: column;
-                gap: 10px;
-            }
-            nav a {
-                display: block;
-                text-align: center;
-            }
         }
     </style>
 </head>
@@ -140,7 +92,7 @@
         {{ content }}
     </main>
     <footer>
-        <p>© 2025 奇怪的小马维基 | 由一位小马爱好者倾心打造</p>
+        <p>© 2025 奇怪的小马维基</p>
     </footer>
 </body>
 </html>
