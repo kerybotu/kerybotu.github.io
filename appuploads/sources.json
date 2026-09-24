@@ -2,12 +2,17 @@
   "version": 5,
   "rootSelector": "body",
   "ruleUrls": [
-    "https://raw.githubusercontent.com/kerybotu/DerpibooruMobileDataBase/main/rules_core.json",
+    "https://kerybotu.github.io/appuploads/rules_core.json"
   ],
   "dynamicUrls": [
-    "https://raw.githubusercontent.com/kerybotu/DerpibooruMobileDataBase/main/dynamic_core.json",
+    "https://kerybotu.github.io/appuploads/dynamic_core.json"
   ],
-  "apkurl": [
-    "https://raw.githubusercontent.com/kerybotu/DerpibooruMobileDataBase/main/dynamic_core.json",
+  "dvapkurl": [
+    "https://kerybotu.github.io/appuploads/DerpiViewer_v1.2.4.apk",
+    "https://download.495648.xyz/DerpiViewer/DerpiViewer_v1.2.4.apk"
+  ],
+  "dmapkurl": [
+    "https://kerybotu.github.io/appuploads/DerpibooruMoblie_v2.2.0.apk",
+    "https://download.495648.xyz/DerpibooruMoblie/DerpibooruMoblie_v2.2.0.apk"
   ]
 }
