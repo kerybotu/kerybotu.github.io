@@ -1,0 +1,13 @@
+{
+  "version": 5,
+  "rootSelector": "body",
+  "ruleUrls": [
+    "https://raw.githubusercontent.com/kerybotu/DerpibooruMobileDataBase/main/rules_core.json",
+  ],
+  "dynamicUrls": [
+    "https://raw.githubusercontent.com/kerybotu/DerpibooruMobileDataBase/main/dynamic_core.json",
+  ],
+  "apkurl": [
+    "https://raw.githubusercontent.com/kerybotu/DerpibooruMobileDataBase/main/dynamic_core.json",
+  ]
+}
