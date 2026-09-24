@@ -7,12 +7,25 @@
   "dynamicUrls": [
     "https://kerybotu.github.io/appuploads/dynamic_core.json"
   ],
+  "dvversion": "1.2.4",
   "dvapkurl": [
     "https://kerybotu.github.io/appuploads/DerpiViewer_v1.2.4.apk",
     "https://download.495648.xyz/DerpiViewer/DerpiViewer_v1.2.4.apk"
   ],
+  "dmversion": "2.2.0",
   "dmapkurl": [
     "https://kerybotu.github.io/appuploads/DerpibooruMoblie_v2.2.0.apk",
     "https://download.495648.xyz/DerpibooruMoblie/DerpibooruMoblie_v2.2.0.apk"
+  ]
+  "dvmessage": [
+    "DerpiViewer v1.2.4更新日志",
+    "•排序新增“随机”，使用随机seed翻页，避免分页时结果重复或顺序变化。",
+    "•修复搜索页无限滚动",
+    "•修复多标签自动补全"
+  ]
+  "dmmessage": [
+    "DerpibooruMoblie v2.2.0更新日志",
+    "•加入标签翻译功能",
+    "•极大优化了静态翻译的速度"
   ]
 }
