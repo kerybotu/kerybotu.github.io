@@ -20,14 +20,14 @@
     "https://download.495648.xyz/DerpibooruMoblie/DerpibooruMoblie_v2.3.0.apk"
   ],
   "dvmessage": [
-    "DerpiViewer v1.2.4更新日志",
-    "•排序新增“随机”，使用随机seed翻页，避免分页时结果重复或顺序变化。",
-    "•修复搜索页无限滚动",
-    "•修复多标签自动补全"
+    "DerpiViewer v1.3.0更新日志",
+    "•加入自动更新机制，发现新版本可直接在应用内进行更新",
+    "•修复标签下划线BUG",
+    "•修复了一些BUG"
   ],
   "dmmessage": [
-    "DerpibooruMoblie v2.2.0更新日志",
-    "•加入标签翻译功能",
-    "•极大优化了静态翻译的速度"
+    "DerpibooruMoblie v2.3.0更新日志",
+    "•加入自动更新机制，发现新版本可直接在应用内进行更新",
+    "•修复了一些BUG"
   ]
 }
