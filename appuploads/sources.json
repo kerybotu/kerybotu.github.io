@@ -7,11 +7,11 @@
   "dynamicUrls": [
     "https://kerybotu.github.io/appuploads/dynamic_core.json"
   ],
-  "dvversion": "1.3.0",
+  "dvversion": "1.3.1",
   "dvapkurl": [
-    "https://kerybotu.github.io/appuploads/DerpiViewer_v1.3.0.apk",
-    "https://download.495666.xyz/DerpiViewer/DerpiViewer_v1.3.0.apk",
-    "https://download.495648.xyz/DerpiViewer/DerpiViewer_v1.3.0.apk"
+    "https://kerybotu.github.io/appuploads/DerpiViewer_v1.3.1.apk",
+    "https://download.495666.xyz/DerpiViewer/DerpiViewer_v1.3.1.apk",
+    "https://download.495648.xyz/DerpiViewer/DerpiViewer_v1.3.1.apk"
   ],
   "dmversion": "2.3.0",
   "dmapkurl": [
@@ -20,10 +20,10 @@
     "https://download.495648.xyz/DerpibooruMoblie/DerpibooruMoblie_v2.3.0.apk"
   ],
   "dvmessage": [
-    "DerpiViewer v1.3.0更新日志",
-    "•加入自动更新机制，发现新版本可直接在应用内进行更新",
-    "•修复标签下划线BUG",
-    "•修复了一些BUG"
+    "DerpiViewer v1.3.1更新日志",
+    "•完善自动更新机制",
+    "•对本地标签词库进行了更新",
+    "•完成了标签翻译词库一些内容的校对"
   ],
   "dmmessage": [
     "DerpibooruMoblie v2.3.0更新日志",
