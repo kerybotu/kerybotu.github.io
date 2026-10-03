@@ -7,11 +7,11 @@
   "dynamicUrls": [
     "https://kerybotu.github.io/appuploads/dynamic_core.json"
   ],
-  "dvversion": "1.4.0",
+  "dvversion": "1.4.1",
   "dvapkurl": [
-    "https://kerybotu.github.io/appuploads/DerpiViewer_v1.4.0.apk",
-    "https://download.495666.xyz/DerpiViewer/DerpiViewer_v1.4.0.apk",
-    "https://download.495648.xyz/DerpiViewer/DerpiViewer_v1.4.0.apk"
+    "https://kerybotu.github.io/appuploads/DerpiViewer_v1.4.1.apk",
+    "https://download.495666.xyz/DerpiViewer/DerpiViewer_v1.4.1.apk",
+    "https://download.495648.xyz/DerpiViewer/DerpiViewer_v1.4.1.apk"
   ],
   "dmversion": "2.3.2",
   "dmapkurl": [
@@ -34,7 +34,8 @@
     "•视频页查看原页面改为跳转至预览详情页",
     "•外观设置新增并默认跟随系统浅暗色切换",
     "•修复本版本范围内的显示与稳定性问题",
-    "•优化搜索页顶栏的跟手体验"
+    "•优化搜索页顶栏的跟手体验",
+    "•支持在设置中关闭标签翻译"
   ],
   "dmmessage": [
     "DerpibooruMoblie v2.3.2更新日志",
