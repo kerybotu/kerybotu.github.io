@@ -13,11 +13,11 @@
     "https://download.495666.xyz/DerpiViewer/DerpiViewer_v1.4.0.apk",
     "https://download.495648.xyz/DerpiViewer/DerpiViewer_v1.4.0.apk"
   ],
-  "dmversion": "2.3.0",
+  "dmversion": "2.3.2",
   "dmapkurl": [
-    "https://kerybotu.github.io/appuploads/DerpibooruMoblie_v2.3.0.apk",
-    "https://download.495666.xyz/DerpibooruMoblie/DerpibooruMoblie_v2.3.0.apk",
-    "https://download.495648.xyz/DerpibooruMoblie/DerpibooruMoblie_v2.3.0.apk"
+    "https://kerybotu.github.io/appuploads/DerpibooruMoblie_v2.3.2.apk",
+    "https://download.495666.xyz/DerpibooruMoblie/DerpibooruMoblie_v2.3.2.apk",
+    "https://download.495648.xyz/DerpibooruMoblie/DerpibooruMoblie_v2.3.2.apk"
   ],
   "dvmessage": [
     "DerpiViewer v1.4.0更新日志",
@@ -37,8 +37,9 @@
     "•优化搜索页顶栏的跟手体验"
   ],
   "dmmessage": [
-    "DerpibooruMoblie v2.3.0更新日志",
-    "•加入自动更新机制，发现新版本可直接在应用内进行更新",
-    "•修复了一些BUG"
+    "DerpibooruMoblie v2.3.2更新日志",
+    "•优化了网络通信逻辑",
+    "•把标签翻译和全站本地静态翻译的开关分离",
+    "•深度IP优选窗口自动滚动"
   ]
 }
