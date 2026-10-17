@@ -7,11 +7,11 @@
   "dynamicUrls": [
     "https://kerybotu.github.io/appuploads/dynamic_core.json"
   ],
-  "dvversion": "1.4.1",
+  "dvversion": "2.0.0",
   "dvapkurl": [
-    "https://kerybotu.github.io/appuploads/DerpiViewer_v1.4.1.apk",
-    "https://download.495666.xyz/DerpiViewer/DerpiViewer_v1.4.1.apk",
-    "https://download.495648.xyz/DerpiViewer/DerpiViewer_v1.4.1.apk"
+    "https://kerybotu.github.io/appuploads/DerpiViewer_v2.0.0.apk",
+    "https://download.495666.xyz/DerpiViewer/DerpiViewer_v2.0.0.apk",
+    "https://download.495648.xyz/DerpiViewer/DerpiViewer_v2.0.0.apk"
   ],
   "dmversion": "2.3.2",
   "dmapkurl": [
@@ -20,22 +20,15 @@
     "https://download.495648.xyz/DerpibooruMoblie/DerpibooruMoblie_v2.3.2.apk"
   ],
   "dvmessage": [
-    "DerpiViewer v1.4.0更新日志",
-    "•校对并修正部分标签及组合名译名",
-    "•新增防社死开关，启动时自动应用过滤器",
-    "•图片卡片与预览页增加剧透遮罩",
-    "•过滤器卡片中显示过滤器 ID",
-    "•GIF与视频右上角显示对应角标",
-    "•优化切图动画，加入双指缩放与矩阵平移",
-    "•优化左右滑动切换动画，改善滑动手感",
-    "•优化视频流预加载机制",
-    "•统一评论数据模型、布局与翻译入口",
-    "•修复视频页收藏无效、链接复制等问题",
-    "•视频页查看原页面改为跳转至预览详情页",
-    "•外观设置新增并默认跟随系统浅暗色切换",
-    "•修复本版本范围内的显示与稳定性问题",
-    "•优化搜索页顶栏的跟手体验",
-    "•支持在设置中关闭标签翻译"
+    "DerpiViewer v2.0.0 更新日志",
+    "• 全面升级 UI 2.0，统一 Liquid Glass 液态玻璃视觉风格",
+    "• 重构公共主题系统，优化浅色/深色模式及强调色适配",
+    "• 统一首页、视频、精选、消息和个人页的导航浮岛",
+    "• 重构图片详情页，优化作品信息、标签、评论及操作布局",
+    "• 优化操作菜单定位与横屏、平板、窄屏等响应式布局",
+    "• 统一加载动画，改善页面切换、滚动及渲染稳定性",
+    "• 设置页新增关于与开发者声明",
+    "• 增加主题、详情页及响应式布局的自动化回归检查"
   ],
   "dmmessage": [
     "DerpibooruMoblie v2.3.2更新日志",
