@@ -13,11 +13,11 @@
     "https://download.495666.xyz/DerpiViewer/DerpiViewer_v2.0.0.apk",
     "https://download.495648.xyz/DerpiViewer/DerpiViewer_v2.0.0.apk"
   ],
-  "dmversion": "2.3.2",
+  "dmversion": "2.3.3",
   "dmapkurl": [
-    "https://kerybotu.github.io/appuploads/DerpibooruMoblie_v2.3.2.apk",
-    "https://download.495666.xyz/DerpibooruMoblie/DerpibooruMoblie_v2.3.2.apk",
-    "https://download.495648.xyz/DerpibooruMoblie/DerpibooruMoblie_v2.3.2.apk"
+    "https://kerybotu.github.io/appuploads/DerpibooruMoblie_v2.3.3.apk",
+    "https://download.495666.xyz/DerpibooruMoblie/DerpibooruMoblie_v2.3.3.apk",
+    "https://download.495648.xyz/DerpibooruMoblie/DerpibooruMoblie_v2.3.3.apk"
   ],
   "dvmessage": [
     "DerpiViewer v2.0.0 更新日志",
@@ -31,9 +31,13 @@
     "• 增加主题、详情页及响应式布局的自动化回归检查"
   ],
   "dmmessage": [
-    "DerpibooruMoblie v2.3.2更新日志",
-    "•优化了网络通信逻辑",
-    "•把标签翻译和全站本地静态翻译的开关分离",
-    "•深度IP优选窗口自动滚动"
+    "DerpibooruMoblie v2.3.3 更新日志",
+    "• 新增 Anubis 挑战诊断与性能观测",
+    "• 增加受远程配置控制的会话降级机制",
+    "• 修复多源站切换时旧 Cookie 未清理的问题",
+    "• 统一 WebView Cookie 初始化流程，减少状态不一致问题",
+    "• 新增 Cookie 兼容性探针，便于排查不同环境下的验证问题",
+    "• 新增按源站隔离的会话 Token 管理与同源请求认证",
+    "• 完善厂商、内核、远程策略及 Cookie 隔离"
   ]
 }
