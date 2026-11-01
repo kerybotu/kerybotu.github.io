@@ -7,11 +7,11 @@
   "dynamicUrls": [
     "https://kerybotu.github.io/appuploads/dynamic_core.json"
   ],
-  "dvversion": "2.0.0",
+  "dvversion": "2.0.1",
   "dvapkurl": [
-    "https://kerybotu.github.io/appuploads/DerpiViewer_v2.0.0.apk",
-    "https://download.495666.xyz/DerpiViewer/DerpiViewer_v2.0.0.apk",
-    "https://download.495648.xyz/DerpiViewer/DerpiViewer_v2.0.0.apk"
+    "https://kerybotu.github.io/appuploads/DerpiViewer_v2.0.1.apk",
+    "https://download.495666.xyz/DerpiViewer/DerpiViewer_v2.0.1.apk",
+    "https://download.495648.xyz/DerpiViewer/DerpiViewer_v2.0.1.apk"
   ],
   "dmversion": "2.3.3",
   "dmapkurl": [
@@ -20,15 +20,10 @@
     "https://download.495648.xyz/DerpibooruMoblie/DerpibooruMoblie_v2.3.3.apk"
   ],
   "dvmessage": [
-    "DerpiViewer v2.0.0 更新日志",
-    "• 全面升级 UI 2.0，统一 Liquid Glass 液态玻璃视觉风格",
-    "• 重构公共主题系统，优化浅色/深色模式及强调色适配",
-    "• 统一首页、视频、精选、消息和个人页的导航浮岛",
-    "• 重构图片详情页，优化作品信息、标签、评论及操作布局",
-    "• 优化操作菜单定位与横屏、平板、窄屏等响应式布局",
-    "• 统一加载动画，改善页面切换、滚动及渲染稳定性",
-    "• 设置页新增关于与开发者声明",
-    "• 增加主题、详情页及响应式布局的自动化回归检查"
+    "DerpiViewere v2.0.1 更新日志",
+    "• IP优选改为统一测速，减少测速等待时间",
+    "• 修复搜索页无法滚动BUG",
+    "• 修复视频页播放器BUG"
   ],
   "dmmessage": [
     "DerpibooruMoblie v2.3.3 更新日志",
