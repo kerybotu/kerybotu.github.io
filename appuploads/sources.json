@@ -7,11 +7,11 @@
   "dynamicUrls": [
     "https://kerybotu.github.io/appuploads/dynamic_core.json"
   ],
-  "dvversion": "2.0.2",
+  "dvversion": "2.0.1",
   "dvapkurl": [
-    "https://kerybotu.github.io/appuploads/DerpiViewer_v2.0.2.apk",
-    "https://download.495666.xyz/DerpiViewer/DerpiViewer_v2.0.2.apk",
-    "https://download.495648.xyz/DerpiViewer/DerpiViewer_v2.0.2.apk"
+    "https://kerybotu.github.io/appuploads/DerpiViewer_v2.0.1.apk",
+    "https://download.495666.xyz/DerpiViewer/DerpiViewer_v2.0.1.apk",
+    "https://download.495648.xyz/DerpiViewer/DerpiViewer_v2.0.1.apk"
   ],
   "dmversion": "2.3.3",
   "dmapkurl": [
@@ -20,13 +20,11 @@
     "https://download.495648.xyz/DerpibooruMoblie/DerpibooruMoblie_v2.3.3.apk"
   ],
   "dvmessage": [
-    "DerpiViewere v2.0.2 更新日志",
-    "• 修复搜索结果详情页左右滑动顺序错误问题",
-    "• 增加性能回退，开启后禁用液态玻璃效果（Android 9.0以下默认开启）",
-    "• 新增云端搜索过滤器功能",
-    "• 完善本地过滤器功能",
-    "• 完善Anubis验证环境"
-
+    "DerpiViewere v2.0.1 更新日志",
+    "• IP优选改为统一测速，减少测速等待时间",
+    "• 修复搜索页无法滚动BUG",
+    "• 更详细的网络报错信息",
+    "• 修复视频页播放器BUG"
   ],
   "dmmessage": [
     "DerpibooruMoblie v2.3.3 更新日志",
